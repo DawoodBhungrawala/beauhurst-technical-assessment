@@ -1,0 +1,20 @@
+name: beauhurst
+type: generic
+performance_mode: none
+docroot: ""
+webserver_type: generic
+nodejs_version: "22"
+omit_containers: [db]
+web_extra_exposed_ports:
+  - name: nuxt
+    container_port: 3000
+    http_port: 80
+    https_port: 443
+web_extra_daemons:
+  - name: nuxt
+    command: "npm run dev -- --port 3000"
+    directory: /var/www/html
+web_environment:
+  - NUXT_OLLAMA_URL=http://host.docker.internal:11434
+  - NUXT_OLLAMA_MODEL=llama3.2:3b
+  - NUXT_PUBLIC_SITE_URL=https://beauhurst.ddev.site

@@ -1,0 +1,25 @@
+{
+  "name": "beauhurst-industry-insights",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "nuxt dev --host 0.0.0.0",
+    "build": "nuxt build",
+    "start": "node .output/server/index.mjs",
+    "test": "node --import tsx --test tests/*.test.ts",
+    "typecheck": "nuxt typecheck",
+    "format": "prettier --write app server shared tests nuxt.config.ts"
+  },
+  "dependencies": {
+    "nuxt": "^4.0.0",
+    "papaparse": "^5.5.3",
+    "zod": "^4.0.0"
+  },
+  "devDependencies": {
+    "@types/papaparse": "^5.3.16",
+    "prettier": "^3.9.10",
+    "tsx": "^4.20.0",
+    "typescript": "^5.9.0",
+    "vue-tsc": "^3.0.0"
+  }
+}

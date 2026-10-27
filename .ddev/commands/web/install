@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+## Description: Install Nuxt dependencies
+## Usage: install
+set -e
+sudo chown -R "$(id -u):$(id -g)" /var/www/html/node_modules
+npm ci

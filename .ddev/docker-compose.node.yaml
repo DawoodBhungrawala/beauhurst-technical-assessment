@@ -1,0 +1,6 @@
+services:
+  web:
+    volumes:
+      - nuxt-node-modules:/var/www/html/node_modules
+volumes:
+  nuxt-node-modules:
