@@ -70,7 +70,8 @@ export async function generateCopy(
     totalFundraising: money(stats.total),
     medianFundraising: money(stats.median),
     meanFundraising: money(stats.mean),
-    topTenShareOfTotalFundraising: `${stats.topTenShare.toFixed(1)}%`,
+    highestFundedGroupSize: Math.min(10, stats.count),
+    highestFundedGroupShareOfTotalFundraising: `${stats.topTenShare.toFixed(1)}%`,
     companiesPerRegion: stats.regions,
     leadingCompanies: companies
       .slice(0, 10)

@@ -81,7 +81,7 @@ Nuxt, Vue, TypeScript, Nitro filesystem storage, Papa Parse, Zod, Node test runn
 
 ## Submission
 
-Create a GitHub repository, push these source files and the lockfile, and share its URL with the recruitment team. Do not upload `.env`, `.data`, `node_modules`, or build output. No repository was created automatically by this project.
+Code is available in the private [GitHub repository](https://github.com/DawoodBhungrawala/beauhurst-technical-assessment). Give the recruitment team collaborator access before sharing the URL, or choose public visibility if appropriate. `.env`, `.data`, `node_modules`, and build output are excluded from Git. The local DDEV URL is not accessible to remote reviewers; they can run the repository using the instructions above. The brief requests a live interview demonstration, not a publicly hosted deployment.
 
 ## Verification performed
 

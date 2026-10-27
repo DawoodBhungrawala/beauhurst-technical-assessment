@@ -70,7 +70,7 @@ useHead({
         ><strong>{{ money(stats.median) }}</strong>
       </div>
       <div>
-        <span>Top 10 share of funding</span
+        <span>Top {{ Math.min(10, stats.count) }} share of funding</span
         ><strong>{{ stats.topTenShare.toFixed(1) }}%</strong>
       </div>
     </section>
