@@ -23,6 +23,8 @@ The desktop Ollama app may already be serving; do not start a second server. Vis
 
 ## DDEV setup
 
+I chose DDEV for local development because I find it easier to set up and use than XAMPP or other local development tools. It keeps the project's Node.js version and server configuration together, and lets me start the environment with a few commands. Nuxt runs on Node.js, so this project does not need XAMPP's Apache, PHP or MySQL services.
+
 Requires DDEV and a running Docker provider (e.g. OrbStack or Docker Desktop).
 
 ```sh
